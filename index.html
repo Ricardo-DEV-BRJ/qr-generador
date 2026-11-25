@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Generador QR · Crea códigos QR gratis</title>
+    <meta name="description" content="Crea códigos QR gratis para enlaces, Wi‑Fi, WhatsApp, correo, SMS y contactos. Sin registro, sin límites y funciona sin conexión.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#181b23" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:title" content="Generador QR">
+    <meta property="og:description" content="Crea códigos QR gratis, sin registro y desde cualquier dispositivo.">
+    <meta property="og:type" content="website">
+    <style>
+      /* Pinta el fondo correcto antes de que cargue el JS (evita el destello blanco). */
+      html { background: #f4f5fa; color: #1f2937; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      @media (prefers-color-scheme: dark) { html { background: #0f1117; color: #e5e7eb; } }
+      .boot { display: grid; place-items: center; min-height: 100vh; min-height: 100dvh; margin: 0; font-size: 1rem; opacity: .7; }
+    </style>
+  </head>
+  <body>
+    <div id="app"><p class="boot">Cargando generador…</p></div>
+    <noscript><p class="boot">Necesitas activar JavaScript para generar códigos QR.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

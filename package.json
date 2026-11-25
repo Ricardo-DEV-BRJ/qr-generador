@@ -1,0 +1,30 @@
+{
+  "name": "generador-qr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Generador de códigos QR con Vue 3 + Vuetify. Todo se genera en el navegador, sin servidor.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.46",
+    "vuetify": "^4.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.11",
+    "pngjs": "^7.0.0",
+    "vite": "^8.3.8",
+    "vite-plugin-compression2": "^2.5.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "vite-plugin-vuetify": "^2.1.3"
+  }
+}

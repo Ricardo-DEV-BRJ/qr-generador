@@ -1,0 +1,9 @@
+# Solo para probar en local:  docker compose up --build  →  http://localhost:8080
+# En Dokploy no hace falta: usa el Dockerfile directamente (ver README).
+services:
+  generador-qr:
+    build: .
+    image: generador-qr:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
